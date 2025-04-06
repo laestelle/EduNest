@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto py-10 px-6">
+  <h1 class="text-4xl font-bold text-indigo-800 mb-6">Hello, {{ user.username }} 👋</h1>
+  <p class="text-gray-600 text-lg mb-10">Welcome to your personalized EduNest dashboard.</p>
+  
+  <div class="grid sm:grid-cols-2 gap-6">
+    <a href="{% url 'courses' %}" class="bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md transition">
+      <h2 class="text-xl font-semibold text-blue-800">Browse Courses</h2>
+      <p class="text-gray-600 mt-2">Find new skills to learn!</p>
+    </a>
+    
+    <a href="#" class="bg-green-100 hover:bg-green-200 p-6 rounded-xl shadow-md transition">
+      <h2 class="text-xl font-semibold text-green-800">Saved Lessons</h2>
+      <p class="text-gray-600 mt-2">Access your bookmarked content.</p>
+    </a>
+
+    <a href="#" class="bg-purple-100 hover:bg-purple-200 p-6 rounded-xl shadow-md transition">
+      <h2 class="text-xl font-semibold text-purple-800">Progress Tracker</h2>
+      <p class="text-gray-600 mt-2">Track your learning journey.</p>
+    </a>
+
+    <a href="#" class="bg-yellow-100 hover:bg-yellow-200 p-6 rounded-xl shadow-md transition">
+      <h2 class="text-xl font-semibold text-yellow-800">Support</h2>
+      <p class="text-gray-600 mt-2">Need help? We’ve got you.</p>
+    </a>
+  </div>
+</div>
+{% endblock %}
